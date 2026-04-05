@@ -1,5 +1,14 @@
 const http = require('http');
 
-http.createServer((req, res) => {
+const app = http.createServer((req, res) => {
   res.end("Hello DevOps 🚀");
-}).listen(3000);
+});
+
+// 👇 só roda se for executado diretamente
+if (require.main === module) {
+  app.listen(3000, () => {
+    console.log("Server running on port 3000");
+  });
+}
+
+module.exports = app;
