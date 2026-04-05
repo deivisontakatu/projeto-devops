@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
 
-      - name: Check app syntax
+      - name: Check app
         run: node -e "require('./index.js')"
+
+      - name: Build Docker image
+        run: docker build -t devops-app .
