@@ -12,5 +12,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run app
-        run: node index.js
+      - name: Check app syntax
+        run: node -e "require('./index.js')"
