@@ -2,7 +2,7 @@
 
 ## Objetivo da Atividade
 
-Este projeto tem como objetivo demonstrar práticas fundamentais de DevOps utilizando:
+Este projeto tem como objetivo demonstrar práticas fundamentais de DevOps:
 
 - Node.js
 - Docker
